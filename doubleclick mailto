@@ -1,6 +1,6 @@
 
 [Patterns]
-Name = "doubleclick mailto 20110909-2"
+Name = "doubleclick mailto 20110909-3"
 Active = TRUE
 URL = "$TYPE(htm)"
 Bounds = "$NEST(<a\s,>)"
@@ -25,5 +25,5 @@ Replace = "<style>"
           ".proxMailto:hover:before {"
           " opacity: 1; }"
           "</style>"
-          "\@ onClick="return false;" onDblClick="location.href='\1'" class="proxLinkNotifier \9">"
+          "\@ onClick="return false;" onDblClick="location.href='\1'" class="proxMailto \9">"
 
