@@ -1,0 +1,28 @@
+
+[Patterns]
+Name = "doubleclick mailto 20110909"
+Active = TRUE
+URL = "$TYPE(htm)"
+Bounds = "$NEST(<a\s,>)"
+Limit = 200
+Match = "[^>]++href=$AV((mailto:[^"]+)\1)[^>]+>&&"
+        "(([^>]++)\# class=$AV(\9)([^>]+)\#|\#)>"
+Replace = "<style>"
+          ".proxMailto {"
+          " position: relative; }"
+          ".proxMailto:before {"
+          " content: '';"
+          " position: absolute; top: 50%; left: 50%;"
+          " margin: -25px 0 0 -25px;"
+          " width: 50px; height: 50px;"
+          " display: block;"
+          " -webkit-border-radius: 7px; -moz-border-radius: 7px;"
+          " -webkit-box-shadow: 0 0 7px #000; -moz-box-shadow: 0 0 7px #000; -o-box-shadow: 0 0 7px #000; box-shadow: 0 0 7px #000;"
+          " background: url(http://Local.ptron/mailto/mail.png) 50% 50% no-repeat, url(http://Local.ptron/mailto/bg.png);"
+          " z-index: 9999;"
+          " opacity: 0;"
+          " -webkit-transition: opacity 0.25s ease; -moz-transition: opacity 0.25s ease; }"
+          ".proxMailto:hover:before {"
+          " opacity: 1; }"
+          "</style>"
+          "\@ onClick="return false;" onDblClick="location.href='\1'" class="proxLinkNotifier \9">"
