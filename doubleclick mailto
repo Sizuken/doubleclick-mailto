@@ -1,6 +1,6 @@
 
 [Patterns]
-Name = "doubleclick mailto 20110909"
+Name = "doubleclick mailto 20110909-2"
 Active = TRUE
 URL = "$TYPE(htm)"
 Bounds = "$NEST(<a\s,>)"
@@ -16,13 +16,14 @@ Replace = "<style>"
           " margin: -25px 0 0 -25px;"
           " width: 50px; height: 50px;"
           " display: block;"
-          " -webkit-border-radius: 7px; -moz-border-radius: 7px;"
+          " -webkit-border-radius: 7px; -moz-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px;"
           " -webkit-box-shadow: 0 0 7px #000; -moz-box-shadow: 0 0 7px #000; -o-box-shadow: 0 0 7px #000; box-shadow: 0 0 7px #000;"
           " background: url(http://Local.ptron/mailto/mail.png) 50% 50% no-repeat, url(http://Local.ptron/mailto/bg.png);"
           " z-index: 9999;"
           " opacity: 0;"
-          " -webkit-transition: opacity 0.25s ease; -moz-transition: opacity 0.25s ease; }"
+          " -webkit-transition: opacity 0.25s ease; -moz-transition: opacity 0.25s ease; -o-transition: opacity 0.25s ease; transition: opacity 0.25s ease; }"
           ".proxMailto:hover:before {"
           " opacity: 1; }"
           "</style>"
           "\@ onClick="return false;" onDblClick="location.href='\1'" class="proxLinkNotifier \9">"
+
