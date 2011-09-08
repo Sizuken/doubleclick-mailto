@@ -20,7 +20,8 @@ mailtoリンクにhoverするとメールアイコンが表示され、リンク
 ・JavaScriptが有効な環境でのみ動作します。
 ・hover表示のフェードイン/アウト効果は、2011年9月9日現在、Firefoxでのみ動作します。
 ・mailtoリンクが元々:before疑似要素で装飾されている場合、競合する可能性が高いでしょう。
+・今のところ、難読化されているmailtoは検知できません。
 
 【権利】
-アイコンは http://www.woothemes.com/2010/08/woocons1/ より WooCons #1 を
-GPLライセンスに基づいて使用しています。
+アイコンは Stainless! - Free Applications Icons Pack をライセンスに基づいて使用しています。
+http://iconleak.com/shop-icon/free-icon-packs/stainless-free-applications-icons-pack
