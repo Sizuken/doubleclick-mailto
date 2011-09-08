@@ -8,6 +8,7 @@ doubleclick mailto
 【動作】
 mailtoリンクにhoverするとメールアイコンが表示され、リンクがmailtoであることを知らせます。
 そのままリンクをダブルクリックすると、ブラウザ既定の動作を実行します。
+	動作サンプル: http://jsdo.it/Sizuken/7Rk8
 
 【導入】
 1. フィルタをインポートする
